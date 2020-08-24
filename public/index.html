@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Web site created using create-react-app">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&amp;family=Radley&amp;family=Raleway:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./img/favicon.png"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Restauracja Słoneczna</title>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#" class="logo-container">
+      <img class="logo" src="./img/logo.png" alt="logo to top">
+      <h1 class="logo-name">Słoneczna</h1>
+    </a>
+    <div class="navigation-container">
+      <ul class="navigation">
+        <li class="navigation-el"><a href="#menu">Menu</a></li>
+        <li class="navigation-el"><a href="#gallery">Galeria</a></li>
+        <li class="navigation-el"><a href="#location">Lokalizacja</a></li>
+        <li class="navigation-el"><a href="#contact">Kontakt</a></li>
+      </ul>
+      <div class="contact-nav">
+        <a href="https://facebook.com">
+          <span class="social-icon fab fa-facebook-square" aria-hidden="true"></span>
+        </a>
+        <a href="tel:123123123" class="phone">
+          <span class="social-icon fas fa-phone-square-alt" aria-hidden="true"></span>
+          123-123-123
+        </a>
+      </div>
+    </div>
+    <button class="hamburger" type="button">
+      <span class="hamburger__bar"></span>
+    </button>
+  </nav>
+  <header class="header">
+    <div class="bg-overlay">
+      <h2 class="header-title">Zapraszamy do słonecznej</h2>
+      <div class="open-hours">
+        <p class="open-hours-item">poniedziałek - piątek <span class="open-hours-hour">10-22</span></p>
+        <p class="open-hours-item">sobota - niedziela<span class="open-hours-hour">8-24</span></p>
+      </div>
+      <button class="btn">Zobacz menu</button>
+    </div>
+  </header>
+  <main>
+    <section class="section menu" id="menu">
+      <h3 class="section-title">Menu</h3>
+      <p class="section-desc">Wybierz danie i zamów z dostawą do domu!</p>
+
+      <div id="root"></div>
+      
+    </section>
+    <section class="section gallery" id="gallery">
+      <h3 class="section-title">Galeria</h3>
+      <div class="modal">
+        <button class="close-btn" aria-label="Zamknij" title="Zamknij"><span class="fas fa-times"></span></button>
+        <div class="modal-container">
+          <div class="modal-img-container">
+            <button class="previous-btn"><span class="fas fa-caret-left"></span></button>
+            <img class="modal-img" src="./img/gallery-img1.jpg" alt="">
+            <button class="next-btn"><span class="fas fa-caret-right"></span></button>
+          </div>
+          <div class="thumbnails-container">
+          </div>
+        </div>
+      </div>
+      <div class="gallery-container">
+        <div class="img-container">
+          <div class="img-overlay">
+            <button class="zoom-btn" type="button">
+              <span class="zoom zoom-icon fas fa-search-plus" aria-hidden="true"></span>
+            </button>
+          </div>
+          <img class="gallery-img" src="./img/gallery-img1.jpg" alt="waiter with dishes">
+        </div>
+        <div class="img-container">
+          <div class="img-overlay">
+            <button class="zoom-btn" type="button">
+              <span class="zoom zoom-icon fas fa-search-plus" aria-hidden="true"></span>
+            </button>
+          </div>
+          <img class="gallery-img" src="./img/gallery-img2.jpg" alt="empty tables">
+        </div>
+        <div class="img-container">
+          <div class="img-overlay">
+            <button class="zoom-btn" type="button">
+              <span class="zoom zoom-icon fas fa-search-plus" aria-hidden="true"></span>
+            </button>
+          </div>
+          <img class="gallery-img" src="./img/gallery-img3.jpg" alt="empty tables">
+        </div>
+        <div class="img-container">
+          <div class="img-overlay">
+            <button class="zoom-btn" type="button">
+              <span class="zoom zoom-icon fas fa-search-plus" aria-hidden="true"></span>
+            </button>
+          </div>
+          <img class="gallery-img" src="./img/gallery-img4.jpg" alt="dish with wine">
+        </div>
+        <div class="img-container">
+          <div class="img-overlay">
+            <button class="zoom-btn" type="button">
+              <span class="zoom zoom-icon fas fa-search-plus" aria-hidden="true"></span>
+            </button>
+          </div>
+          <img class="gallery-img" src="./img/gallery-img5.jpg" alt="dishes">
+        </div>
+        <div class="img-container">
+          <div class="img-overlay">
+            <button class="zoom-btn" type="button">
+              <span class="zoom zoom-icon fas fa-search-plus" aria-hidden="true"></span>
+            </button>
+          </div>
+          <img class="gallery-img" src="./img/gallery-img6.jpg" alt="set table">
+        </div>
+      </div>
+    </section>
+    <section class="section location" id="location">
+      <h3 class="section-title">Lokalizacja</h3>
+      <iframe class="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAsdPgRGvdl6Mgjkc71enegJizRofcZ7Wk&amp;q=Wiejska+4/6/8+Warszawa" allowfullscreen="">
+      </iframe>
+    </section>
+  </main>
+  <footer class="footer section" id="contact">
+    <div class="footer-container">
+      <address class="address">
+        <p class="address-el">Ul. jakaś tam 50, <br>54-645 Warszawa</p>
+        <a href="https://facebook.com" class="address-el">
+          <span class="address-icon fab fa-facebook-square" aria-hidden="true"></span>/sloneczna
+        </a>
+        <a href="mailto:costam@gmail.com" class="address-el">
+          <span class="address-icon fas fa-envelope-square" aria-hidden="true"></span>costam@gmail.com
+        </a>
+        <a href="tel:123123123" class="address-el phone">
+          <span class="address-icon fas fa-phone-square-alt" aria-hidden="true"></span>123-123-123
+        </a>
+      </address>
+      <div class="footer-about">
+        <h4 class="footer-title">Godziny otwarcia</h4>
+          <p class="footer-open-hour">Poniedziałek - piątek 10-22</p>
+          <p class="footer-open-hour">Sobota - niedziela 8-24</p>
+      </div>
+      <div class="footer-about">
+        <h4 class="footer-title">Cateringi</h4>
+        <p class="footer-about">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum repudiandae officiis porro nisi quo laudantium id temporibus sunt, quis numquam dolore debitis, enim eos harum adipisci! Sit, nemo odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/e37359ee9f.js" defer crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollToPlugin.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
