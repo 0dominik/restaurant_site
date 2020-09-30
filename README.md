@@ -1,1 +1,1 @@
-live: https://0dominik.github.io/restaurant-site/
+live: https://0dominik.github.io/restaurant_site/
